@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Estética Médica</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol
+        id="leaf"
+        viewBox="0 0 45 53"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.6"
+        stroke-linejoin="round"
+      >
+        <path d="M22.5 3C12 14 8 24 22.5 40 37 24 33 14 22.5 3Z" />
+        <path
+          d="M22.5 40C10 38 4 30 3 22c8 0 15 4 19.500 18Zm0 0c12.500-2 18.500-10 19.500-18-8 0-15 4-19.500 18Z"
+        />
+        <path d="M22.500 12v38" />
+      </symbol>
+      <symbol id="arr" viewBox="0 0 24 24">
+        <path d="M7 17 17 7M8 7h9v9" />
+      </symbol>
+      <symbol id="plus" viewBox="0 0 24 24">
+        <path d="M12 5v14M5 12h14" />
+      </symbol>
+      <symbol id="chev" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6" /></symbol>
+    </svg>
+
+    <header class="hd" id="hd">
+      <div class="wrap">
+        <a class="logo" href="#top" aria-label="Aurea Estética Médica"
+          ><svg><use href="#leaf" /></svg
+          ><span><b>aurea</b><small>ESTÉTICA MÉDICA</small></span></a
+        >
+        <nav class="nav" id="nav" aria-label="Principal">
+          <a href="#servicos">Serviços</a><a href="#sobre">Sobre</a
+          ><a href="#depoimentos">Depoimentos</a
+          ><a href="#perguntas">Perguntas</a>
+        </nav>
+        <a class="btn sm" href="#contato"
+          >Agendar Consulta <svg class="ic"><use href="#arr" /></svg
+        ></a>
+        <button
+          class="burger"
+          id="bg"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <svg class="ic" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="wrap hero">
+        <div class="hero-t">
+          <p class="eyebrow ld" style="--i: 0">Estética com intenção</p>
+          <h1 class="ld" style="--i: 1">
+            Um pouco de renovação. <em>Totalmente você.</em>
+          </h1>
+          <p class="lead ld" style="--i: 2">
+            Uma abordagem pensada para a pele e a medicina estética. Explore
+            renovações sutis, com um plano de tratamento feito para você — e não
+            para uma versão diferente de você.
+          </p>
+          <div class="cta-row ld" style="--i: 3">
+            <a class="btn" href="#contato"
+              >Agendar Avaliação <svg class="ic"><use href="#arr" /></svg></a
+            ><a class="lnk" href="#servicos"
+              >Ver Procedimentos <svg class="ic"><use href="#arr" /></svg
+            ></a>
+          </div>
+          <p class="note ld" style="--i: 4">
+            <svg class="ic" viewBox="0 0 24 24">
+              <path
+                d="M12 21s-7-5-7-11a4 4 0 0 1 7-2.500A4 4 0 0 1 19 10c0 6-7 11-7 11Z"
+              /></svg
+            >Avaliação individual. Escolhas pensadas. Sem pressão.
+          </p>
+        </div>
+        <div class="hero-img">
+          <img
+            src="images/hero.webp"
+            alt="Rosto feminino com metade da pele renovada, ilustrando o resultado de um tratamento"
+            width="766"
+            height="829"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
+
+      <section class="ben" id="sobre">
+        <div class="wrap">
+          <article class="rv">
+            <span class="bi"
+              ><svg class="ic" viewBox="0 0 24 24">
+                <path d="M12 3v6M9 6h6M5 13a7 7 0 0 0 14 0v-1H5Z" /></svg
+            ></span>
+            <h3>Médicos Especialistas</h3>
+            <p>
+              Orientação médica atenta, com tempo para discutir seus objetivos,
+              adequação e alternativas.
+            </p>
+          </article>
+          <article class="rv" style="--d: 0.1s">
+            <span class="bi"
+              ><svg class="ic" viewBox="0 0 24 24">
+                <rect x="6" y="6" width="12" height="12" rx="2" />
+                <path
+                  d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"
+                /></svg
+            ></span>
+            <h3>Tecnologia de Ponta</h3>
+            <p>
+              Explore opções de tratamento modernas, escolhidas para as
+              necessidades da sua pele — nunca tecnologia por si só.
+            </p>
+          </article>
+          <article class="rv" style="--d: 0.2s">
+            <span class="bi"
+              ><svg class="ic" viewBox="0 0 24 24">
+                <path d="M12 3c-4 4-6 7-6 10a6 6 0 0 0 12 0c0-3-2-6-6-10Z" />
+                <path d="M12 9v8" /></svg
+            ></span>
+            <h3>Tratamentos Personalizados</h3>
+            <p>
+              Uma abordagem individual para seus traços, pele e prioridades. Seu
+              plano começa com uma conversa.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sec wrap" id="servicos">
+        <div class="sec-h">
+          <div class="rv">
+            <p class="eyebrow">Tratamentos pensados</p>
+            <h2>Refinamentos sutis. Escolhas pessoais.</h2>
+          </div>
+          <p class="rv" style="--d: 0.1s">
+            Descubra uma abordagem que respeita sua individualidade. Todo
+            tratamento começa com o entendimento da sua pele.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="card rv">
+            <figure>
+              <img
+                src="images/botox.webp"
+                alt="Profissional de luvas tocando a testa de uma paciente durante avaliação"
+                loading="lazy"
+              />
+            </figure>
+            <div>
+              <small>Expressão e equilíbrio</small>
+              <h3>Botox</h3>
+              <p>
+                Uma opção para suavizar a aparência das linhas de expressão, com
+                dosagem ajustada ao seu movimento facial.
+              </p>
+              <a class="lnk" href="#contato"
+                >Saiba Mais <svg class="ic"><use href="#arr" /></svg
+              ></a>
+            </div>
+          </article>
+          <article class="card rv" style="--d: 0.1s">
+            <figure>
+              <img
+                src="images/preenchimento.webp"
+                alt="Médica avaliando o rosto de uma paciente em consultório"
+                loading="lazy"
+              />
+            </figure>
+            <div>
+              <small>Contorno e harmonia</small>
+              <h3>Preenchimento dérmico</h3>
+              <p>
+                Explore volume e suporte de contorno sutis, orientados pelos
+                seus traços e por uma avaliação individual.
+              </p>
+              <a class="lnk" href="#contato"
+                >Saiba Mais <svg class="ic"><use href="#arr" /></svg
+              ></a>
+            </div>
+          </article>
+          <article class="card rv" style="--d: 0.2s">
+            <figure>
+              <img
+                src="images/laser.webp"
+                alt="Paciente deitada recebendo tratamento a laser com proteção nos olhos"
+                loading="lazy"
+              />
+            </figure>
+            <div>
+              <small>Textura &amp; renovação</small>
+              <h3>Renovação da pele a laser</h3>
+              <p>
+                Uma abordagem direcionada para textura e tom irregulares.
+                Adequação e recuperação variam conforme pele e tratamento.
+              </p>
+              <a class="lnk" href="#contato"
+                >Saiba Mais <svg class="ic"><use href="#arr" /></svg
+              ></a>
+            </div>
+          </article>
+        </div>
+        <p class="fine">
+          Adequação, benefícios potenciais e riscos dependem de avaliação
+          individual. Resultados variam. Todas as imagens são ilustrativas e não
+          retratam pacientes reais.
+        </p>
+      </section>
+
+      <section class="dep sec" id="depoimentos">
+        <div class="wrap">
+          <div class="sec-h">
+            <div class="rv">
+              <p class="eyebrow">A experiência do cuidado</p>
+              <h2>Cuidado pensado para você.</h2>
+            </div>
+            <div class="arrows">
+              <button id="pv" aria-label="Anterior">
+                <svg
+                  class="ic"
+                  viewBox="0 0 24 24"
+                  style="transform: scaleX(-1)"
+                >
+                  <use href="#chev" />
+                </svg></button
+              ><button id="nx" aria-label="Próximo">
+                <svg class="ic" viewBox="0 0 24 24"><use href="#chev" /></svg>
+              </button>
+            </div>
+          </div>
+          <div class="track" id="tr">
+            <figure class="quote">
+              <span class="tag"
+                >Exemplo ilustrativo · não é um relato real</span
+              >
+              <div class="stars">
+                <span aria-hidden="true">☆☆☆☆☆</span>avaliação ilustrativa
+              </div>
+              <blockquote>
+                “Tempo para perguntar, explicações claras e um plano que parecia
+                pensado, não apressado.”
+              </blockquote>
+              <figcaption class="who">
+                <i>E</i
+                ><span
+                  ><b>Emma · persona ilustrativa</b
+                  ><small>perfil ilustrativo</small></span
+                >
+              </figcaption>
+            </figure>
+            <figure class="quote">
+              <span class="tag"
+                >Exemplo ilustrativo · não é um relato real</span
+              >
+              <div class="stars">
+                <span aria-hidden="true">☆☆☆☆☆</span>avaliação ilustrativa
+              </div>
+              <blockquote>
+                “O que importava para mim era ser ouvida. Uma conversa pensada
+                tornou o próximo passo menos intimidador.”
+              </blockquote>
+              <figcaption class="who">
+                <i>S</i
+                ><span
+                  ><b>Sofia · persona ilustrativa</b
+                  ><small>perfil ilustrativo</small></span
+                >
+              </figcaption>
+            </figure>
+            <figure class="quote">
+              <span class="tag"
+                >Exemplo ilustrativo · não é um relato real</span
+              >
+              <div class="stars">
+                <span aria-hidden="true">☆☆☆☆☆</span>avaliação ilustrativa
+              </div>
+              <blockquote>
+                “Um espaço calmo, uma abordagem sem pressa e espaço para decidir
+                o que parecia certo para mim.”
+              </blockquote>
+              <figcaption class="who">
+                <i>C</i
+                ><span
+                  ><b>Clara · persona ilustrativa</b
+                  ><small>perfil ilustrativo</small></span
+                >
+              </figcaption>
+            </figure>
+          </div>
+          <div class="bar" aria-hidden="true"><i id="pg"></i></div>
+          <p class="fine">
+            Depoimentos e avaliações ilustrativos para este conceito apenas. Não
+            são exibidas avaliações reais de pacientes.
+          </p>
+        </div>
+      </section>
+
+      <section class="sec wrap" id="perguntas">
+        <div class="faq">
+          <div class="l rv">
+            <p class="eyebrow">Um pouco mais de clareza</p>
+            <h2>A confiança começa com uma conversa.</h2>
+            <p>
+              Boas decisões começam com informações honestas. Traga suas dúvidas
+              — não precisa ter tudo resolvido.
+            </p>
+            <a class="lnk" href="#contato"
+              >Faça uma pergunta <svg class="ic"><use href="#arr" /></svg
+            ></a>
+          </div>
+          <div class="rv" style="--d: 0.1s">
+            <div class="acc" id="acc">
+              <div class="open">
+                <button aria-expanded="true">
+                  Como sei qual tratamento é o certo para mim?<svg
+                    class="ic"
+                    viewBox="0 0 24 24"
+                  >
+                    <use href="#plus" />
+                  </svg>
+                </button>
+                <div class="pn">
+                  <p>
+                    Comece com uma consulta individual. Discutiremos seus
+                    objetivos, histórico médico e pele, depois explicaremos
+                    opções adequadas, riscos e alternativas — incluindo a
+                    escolha de não realizar tratamento. Não há um plano que
+                    sirva a todos.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <button aria-expanded="false">
+                  Qual tempo de recuperação devo esperar?<svg
+                    class="ic"
+                    viewBox="0 0 24 24"
+                  >
+                    <use href="#plus" />
+                  </svg>
+                </button>
+                <div class="pn">
+                  <p>
+                    Varia conforme o procedimento, o tipo de pele e o seu
+                    histórico. Na avaliação, explicamos o que esperar antes,
+                    durante e depois de cada opção.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <button aria-expanded="false">
+                  Os procedimentos estéticos são seguros para todos?<svg
+                    class="ic"
+                    viewBox="0 0 24 24"
+                  >
+                    <use href="#plus" />
+                  </svg>
+                </button>
+                <div class="pn">
+                  <p>
+                    Não. Todo procedimento envolve riscos e depende de avaliação
+                    médica individual. Por isso, adequação e possíveis efeitos
+                    colaterais são discutidos antes de qualquer decisão.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <button aria-expanded="false">
+                  O que acontece na minha primeira consulta?<svg
+                    class="ic"
+                    viewBox="0 0 24 24"
+                  >
+                    <use href="#plus" />
+                  </svg>
+                </button>
+                <div class="pn">
+                  <p>
+                    Uma conversa sobre sua pele, seus objetivos e seu histórico,
+                    sem compromisso com tratamento. Você sai com clareza sobre
+                    as opções, não com pressa para decidir.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="fine">
+              Todos os procedimentos envolvem riscos. Adequação, possíveis
+              efeitos colaterais e recuperação são discutidos antes do
+              tratamento.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="contato">
+        <svg
+          class="leaf"
+          viewBox="0 0 336 518"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <path d="M168 518V40" />
+          <path d="M168 40C100 120 100 220 168 300 236 220 236 120 168 40Z" />
+          <path
+            d="M168 340C90 330 40 270 30 200c80 0 130 50 138 140Zm0 0c78-10 128-70 138-140-80 0-130 50-138 140Z"
+          />
+          <path
+            d="M168 460c-60-4-100-44-110-96 60 0 104 36 110 96Zm0 0c60-4 100-44 110-96-60 0-104 36-110 96Z"
+          />
+        </svg>
+        <div class="wrap">
+          <div class="rv">
+            <p class="eyebrow">Seu próximo capítulo, no seu ritmo</p>
+            <h2>Valorize sua beleza. No seu ritmo.</h2>
+            <p>
+              Uma consulta pessoal. Orientação clara. Espaço para decidir.
+              Comece com uma conversa sobre sua pele e seus objetivos.
+            </p>
+          </div>
+          <div class="r rv" style="--d: 0.1s">
+            <a
+              class="btn"
+              href="https://wa.me/5500000000000"
+              target="_blank"
+              rel="noopener"
+              ><svg class="ic" viewBox="0 0 24 24">
+                <path d="M4 20l1.300-4.200A8 8 0 1 1 8.300 18.800L4 20Z" />
+                <path
+                  d="M9 9c0 3 3 6 6 6l1.200-1.500-2-1-1 .8c-.9-.4-1.700-1.200-2.100-2.100l.8-1-1-2L9 9Z"
+                /></svg
+              >Agendar via WhatsApp</a
+            ><span
+              >Sem compromisso com tratamento. Apenas o primeiro passo.</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <div class="g">
+          <div>
+            <a class="logo" href="#top"
+              ><svg><use href="#leaf" /></svg
+              ><span><b>aurea</b><small>ESTÉTICA MÉDICA</small></span></a
+            >
+            <p>
+              Uma abordagem pensada para a pele.<br />Uma confiança tranquila em
+              ser você mesma.
+            </p>
+          </div>
+          <div>
+            <h4>Encontre-nos</h4>
+            <p>
+              [Endereço da clínica]<br />[Cidade, CEP]<br />[+55 (00)
+              00000-0000]
+            </p>
+          </div>
+          <div>
+            <h4>Fique conectado</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bot">
+          <div class="row">
+            <span>© 2026 Aurea Estética Médica. Clínica conceito.</span>
+            <div>
+              <a href="#">Política de Privacidade</a
+              ><a href="#">Termos de Uso</a>
+            </div>
+          </div>
+          <p>
+            Identidade de clínica conceito e dados de contato provisórios.
+            Imagens, textos de depoimentos, perfis e avaliações são ilustrativos
+            apenas. Esta página não é um conselho médico; decisões de tratamento
+            dependem de avaliação clínica individual.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
